@@ -43,8 +43,7 @@ pnpm verify
 - npm 10+
 - pnpm 10+
 
-- 参考リンク: [Node.js公式サイト](https://nodejs.org/) 
-
+- 参考リンク: [Node.js公式サイト](https://nodejs.org/)
 
 ## Scripts
 

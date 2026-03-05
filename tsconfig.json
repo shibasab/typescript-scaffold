@@ -13,18 +13,8 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "types": [
-      "node"
-    ]
+    "types": ["node"]
   },
-  "include": [
-    "src",
-    "tests",
-    "eslint.config.mjs",
-    "vitest.config.ts"
-  ],
-  "exclude": [
-    "dist",
-    "node_modules"
-  ]
+  "include": ["src", "tests", "eslint.config.mjs", "vitest.config.ts"],
+  "exclude": ["dist", "node_modules"]
 }

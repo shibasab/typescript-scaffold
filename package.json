@@ -4,9 +4,6 @@
   "private": true,
   "description": "Reusable TypeScript Node.js scaffold",
   "type": "module",
-  "engines": {
-    "node": ">=24.0.0"
-  },
   "scripts": {
     "prepare": "git config core.hooksPath .husky",
     "dev": "tsx watch src/main.ts",
@@ -21,11 +18,6 @@
     "test:watch": "vitest",
     "verify": "oxfmt --check . && eslint \"src/**/*.{ts,tsx,mts,cts}\" \"tests/**/*.{ts,tsx,mts,cts}\" \"vitest.config.ts\" && vitest run && tsc --noEmit && tsc -p tsconfig.build.json"
   },
-  "lint-staged": {
-    "*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}": [
-      "oxfmt --no-error-on-unmatched-pattern"
-    ]
-  },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@types/node": "^24.0.0",
@@ -37,6 +29,14 @@
     "typescript": "^5.8.0",
     "typescript-eslint": "^8.25.0",
     "vitest": "^3.0.0"
+  },
+  "lint-staged": {
+    "*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}": [
+      "oxfmt --no-error-on-unmatched-pattern"
+    ]
+  },
+  "engines": {
+    "node": ">=24.0.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

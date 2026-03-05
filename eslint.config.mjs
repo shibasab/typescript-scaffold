@@ -4,7 +4,7 @@ import tseslint from "typescript-eslint";
 
 export default [
   {
-    ignores: ["dist", "coverage"]
+    ignores: ["dist", "coverage"],
   },
   js.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
@@ -14,12 +14,12 @@ export default [
       ecmaVersion: "latest",
       sourceType: "module",
       globals: {
-        ...globals.node
+        ...globals.node,
       },
       parserOptions: {
         projectService: true,
-        tsconfigRootDir: import.meta.dirname
-      }
+        tsconfigRootDir: import.meta.dirname,
+      },
     },
     rules: {
       "no-console": "off",
@@ -27,14 +27,14 @@ export default [
         "error",
         {
           selector: "typeLike",
-          format: ["PascalCase"]
+          format: ["PascalCase"],
         },
         {
           selector: "variable",
           format: ["camelCase", "UPPER_CASE"],
-          leadingUnderscore: "allow"
-        }
-      ]
-    }
-  }
+          leadingUnderscore: "allow",
+        },
+      ],
+    },
+  },
 ];
