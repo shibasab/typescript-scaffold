@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+
+.pnpm-store/
+.npm/
+
+.idea/
+.vscode/
+
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+corepack pnpm lint-staged || exit 1
+corepack pnpm lint || exit 1
+corepack pnpm test || exit 1
+corepack pnpm typecheck
