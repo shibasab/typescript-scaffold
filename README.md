@@ -63,7 +63,7 @@ pnpm verify
 
 `pre-commit` で以下を実行します。
 
-1. `pnpm lint-staged`（staged TS/JS を oxfmt で自動整形）
+1. `pnpm lint-staged`（staged ファイルを oxfmt で自動整形して再ステージ）
 2. `pnpm lint`
 3. `pnpm test`
 4. `pnpm typecheck`
