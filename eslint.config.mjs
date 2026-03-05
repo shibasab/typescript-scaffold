@@ -23,6 +23,20 @@ export default [
     },
     rules: {
       "no-console": "off",
+      "no-restricted-syntax": [
+        "error",
+        {
+          selector: "ClassDeclaration",
+          message:
+            "Class declaration is not allowed. Use functions and objects unless an external requirement makes class unavoidable.",
+        },
+        {
+          selector: "ClassExpression",
+          message:
+            "Class expression is not allowed. Use functions and objects unless an external requirement makes class unavoidable.",
+        },
+      ],
+      "@typescript-eslint/no-unsafe-type-assertion": "error",
       "@typescript-eslint/naming-convention": [
         "error",
         {
