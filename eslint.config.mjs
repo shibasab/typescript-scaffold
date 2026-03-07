@@ -23,8 +23,18 @@ export default [
     },
     rules: {
       "no-console": "off",
+      "func-style": ["error", "expression"],
+      "prefer-arrow-callback": "error",
       "no-restricted-syntax": [
         "error",
+        {
+          selector: "FunctionDeclaration",
+          message: "関数定義はアロー関数を使用してください。",
+        },
+        {
+          selector: "FunctionExpression",
+          message: "関数定義はアロー関数を使用してください。",
+        },
         {
           selector: "ClassDeclaration",
           message:
@@ -36,6 +46,7 @@ export default [
             "Class expression is not allowed. Use functions and objects unless an external requirement makes class unavoidable.",
         },
       ],
+      "@typescript-eslint/switch-exhaustiveness-check": "error",
       "@typescript-eslint/no-unsafe-type-assertion": "error",
       "@typescript-eslint/naming-convention": [
         "error",

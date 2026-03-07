@@ -1,7 +1,7 @@
 import { greet } from "./greet.js";
 
-function main(): void {
+const main = (): void => {
   console.log(greet("TypeScript"));
-}
+};
 
 main();
