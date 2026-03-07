@@ -35,8 +35,19 @@ export default [
           selector: "FunctionExpression",
           message: "関数定義はアロー関数を使用してください。",
         },
+        {
+          selector: "ClassDeclaration",
+          message:
+            "Class declaration is not allowed. Use functions and objects unless an external requirement makes class unavoidable.",
+        },
+        {
+          selector: "ClassExpression",
+          message:
+            "Class expression is not allowed. Use functions and objects unless an external requirement makes class unavoidable.",
+        },
       ],
       "@typescript-eslint/switch-exhaustiveness-check": "error",
+      "@typescript-eslint/no-unsafe-type-assertion": "error",
       "@typescript-eslint/naming-convention": [
         "error",
         {

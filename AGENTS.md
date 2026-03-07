@@ -31,6 +31,8 @@
 
 - 関数定義は `function` 宣言ではなくアロー関数で行う（例外: 外部仕様で `function` が必須な場合）。
 - `switch` / `if` 分岐は網羅性を担保する（`never` チェック等）。
+- イミュータブルを前提にし、`const` を基本とする。必要に応じて `readonly` / `Readonly` / `ReadonlyArray` を優先する。
+- `class` は原則禁止とする。外部要件など不可避な場合のみ例外とし、`eslint-disable` コメントに理由を必ず記載する。
 
 ## Git / PR
 
