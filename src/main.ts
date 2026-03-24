@@ -1,7 +1,7 @@
-import { greet } from "./greet.js";
+import { greet } from './greet.js'
 
 const main = (): void => {
-  console.log(greet("TypeScript"));
-};
+  console.log(greet('TypeScript'))
+}
 
-main();
+main()

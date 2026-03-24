@@ -1,9 +1,9 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it } from 'vitest'
 
-import { greet } from "../src/greet.js";
+import { greet } from '../src/greet.js'
 
-describe("greet", () => {
-  it("returns a greeting with the given name", () => {
-    expect(greet("World")).toBe("Hello, World!");
-  });
-});
+describe('greet', () => {
+  it('returns a greeting with the given name', () => {
+    expect(greet('World')).toBe('Hello, World!')
+  })
+})
